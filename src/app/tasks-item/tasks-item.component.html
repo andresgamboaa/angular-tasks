@@ -1,0 +1,4 @@
+<div class="item {{completed?'completed':''}}">
+    <button class="check" (click)="toggle()">{{completed?'✓':''}}</button>
+    <input type="text" [(ngModel)]="content" (submit)="submitChanges()"/>
+</div>
